@@ -1,9 +1,9 @@
 import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
 import "rxjs/add/operator/map";
+import * as PouchDB from "pouchdb";
 
-declare var require:Require;
-import * as PouchDB from 'pouchdb';
+declare var require: Require;
 
 PouchDB.plugin(require('pouchdb-authentication'));
 
@@ -20,7 +20,7 @@ export class AuthicationService {
   localdb: any;
   firstTime: boolean = false;
   users = [];
-
+  user: any;
 
   constructor(public http: Http) {
     console.log('Hello AuthicationService Provider');
@@ -31,52 +31,78 @@ export class AuthicationService {
   }
 
   login(username, password){
-    this.db.login(username,password).then( (res) =>{
-      console.log(res);
-      return res;
-    },(error) => {
-      console.log("username and password were invalid");
-      return error;
+    console.log("printing the user and pass" + username + " " + password);
+    return new Promise(resolve => {
+      this.db.get('users').then((res) => {
+        console.log(res);
+        if (res) {
+          for (let userInfo of res.users) {
+            if (userInfo.email == username && userInfo.password == password) {
+              console.log("match found");
+              this.user = userInfo;
+              resolve(this.user);
+            }
+
+          }
+
+
+        } else {
+          console.log("No response from the server: please contact system admin");
+        }
+        return this.user;
+      });
     });
+
+
+    /* this.db.login(username,password).then( (res) =>{
+     console.log(res);
+     return res;
+     },(error) => {
+     console.log("username and password were invalid");
+     return error;
+     });*/
   }
 
-  logout(username){
-    this.db.logout(username).then( (res) => {
+  logout(username) {
+    this.db.logout(username).then((res) => {
       console.log('user was logged out successfully');
       return this.db.allDocs();
-    },(error) => {
+    }, (error) => {
       console.log('something else has happened');
       return error;
     });
   }
 
-  signIn(userForm){
-   return new Promise(resolve =>{
-     this.db.get('user').then( (res) =>{
-       this.firstTime = true;
-       console.log("getting the information of the user" + res);
-       if(res) {
-         for (let user of res){
-           if(!user.email == userForm.email){
-             this.db.put(userForm);
-             console.log("insert was successful");
-           }
-         }
-       }
+  signIn(userForm) {
+    return new Promise(resolve => {
+      this.db.get('users').then((res) => {
+        this.firstTime = true;
+        console.log("getting the information of the user" + res);
+        if (res) {
+          for (let result of res.users) {
+            if (!result.email == userForm.email) {
+              this.db.put({_id: 'users', users: [userForm]});
+              console.log("insert was successful");
+            } else {
+              console.log("user already exists in the system");
+            }
+            resolve(result.user);
+          }
+        }
 
-     }, (error) => {
-       if(this.firstTime){
-         this.db.put(userForm);
-         console.log("insert was successful");
-       } else {
-         console.log("error has happened");
-       }
-     });
-   });
+      }, (error) => {
+        if (!this.firstTime) {
+          this.db.put({_id: 'users', users: [userForm]});
+          console.log("insert was successful");
+        } else {
+          console.log("error has happened");
+        }
+      });
+    });
   }
 
-  forgotPassword(username){
-    if(username)this.db.forgotPassword(username).then((result) => {
+  forgotPassword(username) {
+    if (username)this.db.forgotPassword(username).then((result) => {
       console.log(result);
       return result;
     }, (error) => {

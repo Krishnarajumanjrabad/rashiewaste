@@ -1,15 +1,18 @@
-import { Component,ViewChild, ElementRef } from '@angular/core';
-import { NavController, Slides } from 'ionic-angular';
+import {Component} from "@angular/core";
+import {NavController, NavParams} from "ionic-angular";
 import {NavigateToPage} from "../navigate-to/navigate-to";
+import {TabsPage} from "../tabs/tabs";
 
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
+  private user: any;
 
-
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.user = JSON.parse(window.localStorage.getItem("user"));
+    console.log("printing the user name" + this.user.name);
 
   }
 
@@ -39,5 +42,14 @@ export class HomePage {
   openTwitter(){
     window.open("https://twitter.com/krishna_mr", "_system", "location=yes");
     return false;
+  }
+
+  logout(email) {
+    console.log("printing the current user" + email);
+    if (email) {
+      window.localStorage.removeItem("user");
+      this.navCtrl.setRoot(TabsPage);
+    }
+
   }
 }
