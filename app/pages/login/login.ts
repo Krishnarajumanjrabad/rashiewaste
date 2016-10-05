@@ -52,26 +52,22 @@ export class LoginPage {
           console.log(res);
           window.localStorage.setItem("user", JSON.stringify(res));
           this.navCtrl.setRoot(TabsPage);
-        } else {
-          console.log("inside the else loop");
-          let errorMessage: string = "Invalid username or password";
-          let errorAlert = this.alertCrt.create({
-            message: errorMessage,
-            buttons: [
-              {
-                text: "Ok",
-                role: 'cancel'
-              }
-            ]
-          });
-
-          errorAlert.present();
-
         }
+      }).catch((error) => {
+        console.log("inside the else loop");
+        let errorMessage: string = "Invalid username or password";
+        let errorAlert = this.alertCrt.create({
+          message: errorMessage,
+          buttons: [
+            {
+              text: "Ok",
+              role: 'cancel'
+            }
+          ]
+        });
       });
     }
 
+
   }
-
-
 }

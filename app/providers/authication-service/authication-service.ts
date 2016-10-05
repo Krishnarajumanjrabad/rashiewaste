@@ -21,6 +21,8 @@ export class AuthicationService {
   firstTime: boolean = false;
   users = [];
   user: any;
+  recordFound: boolean = false;
+  DB_NAME = 'users';
 
   constructor(public http: Http) {
     console.log('Hello AuthicationService Provider');
@@ -28,39 +30,43 @@ export class AuthicationService {
     this.db = new PouchDB('http://admin:admin@localhost:5984/rashi_db');
     this.localdb = new PouchDB('rashi_db');
     this.localdb.sync(this.db, {live: true, retry: true}).on('error', console.log.bind(console));
+    console.log(this.db);
   }
 
-  login(username, password){
+  login(username, password) {
     console.log("printing the user and pass" + username + " " + password);
     return new Promise(resolve => {
-      this.db.get('users').then((res) => {
+      this.db.get(this.DB_NAME).then((res) => {
         console.log(res);
         if (res) {
           for (let userInfo of res.users) {
             if (userInfo.email == username && userInfo.password == password) {
               console.log("match found");
               this.user = userInfo;
+              this.recordFound = true;
               resolve(this.user);
             }
-
           }
-
-
-        } else {
-          console.log("No response from the server: please contact system admin");
         }
+        if (!this.recordFound) {
+          throw new Error("invalid username and password");
+        }
+
         return this.user;
+      }).catch((error) => {
+        if (error) {
+          this.handleError(error);
+        }
       });
+
     });
 
+  }
 
-    /* this.db.login(username,password).then( (res) =>{
-     console.log(res);
-     return res;
-     },(error) => {
-     console.log("username and password were invalid");
-     return error;
-     });*/
+  private handleError(error: Error): void {
+
+    console.error(error);
+
   }
 
   logout(username) {
@@ -75,7 +81,7 @@ export class AuthicationService {
 
   signIn(userForm) {
     return new Promise(resolve => {
-      this.db.get('users').then((res) => {
+      this.db.get(this.DB_NAME).then((res) => {
         this.firstTime = true;
         console.log("getting the information of the user" + res);
         if (res) {
