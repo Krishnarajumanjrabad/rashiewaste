@@ -1,8 +1,8 @@
 import {Component} from "@angular/core";
-import {NavController} from "ionic-angular";
+import {NavController, AlertController} from "ionic-angular";
 import {FormBuilder, Validators} from "@angular/forms";
 import {AuthicationService} from "../../providers/authication-service/authication-service";
-import {Control} from "@angular/common";
+import {LoginPage} from "../login/login";
 
 /*
  Generated class for the SignupPage page.
@@ -22,10 +22,11 @@ export class SignupPage {
   address: string;
   contactNumber: string;
   email: string;
+  errorAlert: any;
+  errorMessage: string = "User is already Exist in the system";
 
 
-
-  constructor(private navCtrl: NavController, public fb: FormBuilder, public auth: AuthicationService) {
+  constructor( private navCtrl: NavController, public fb: FormBuilder, public auth: AuthicationService, public alertCrt: AlertController ) {
     console.log('Hello Sign Up Page');
     this.signupForm = fb.group({
       'password': ['', [Validators.required, Validators.minLength(8)]],
@@ -64,8 +65,49 @@ export class SignupPage {
     console.log('inside the signup method');
     if (formValue) {
       console.log('Submitted value: ', formValue.password);
-      this.auth.signIn(formValue);
-      console.log('insert was successful');
+      this.auth.signIn(formValue).then(( res ) => {
+        if (res) {
+          console.log(res);
+          window.localStorage.setItem("user", JSON.stringify(res));
+          console.log('insert was successful');
+          this.navCtrl.setRoot(LoginPage);
+          this.navCtrl.popToRoot();
+        } else {
+          this.errorAlert = this.alertCrt.create({
+            title: 'Sign Up Failure Message',
+            message: this.errorMessage,
+            buttons: [
+              {
+                text: "Ok",
+
+                handler: data => {
+                  console.log('Save Clicked');
+                }
+
+              }
+            ]
+          });
+          this.errorAlert.present();
+
+        }
+      }).catch(( err ) => {
+        this.errorAlert = this.alertCrt.create({
+          title: 'Login Failure Message',
+          message: this.errorMessage,
+          buttons: [
+            {
+              text: "Ok",
+
+              handler: data => {
+                console.log('Save Clicked');
+              }
+
+            }
+          ]
+        });
+        this.errorAlert.present();
+      });
+
     }
   }
 }

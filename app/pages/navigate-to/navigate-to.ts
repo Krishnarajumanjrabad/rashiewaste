@@ -31,7 +31,7 @@ export class NavigateToPage {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         panControl: false,
         streetViewControl: true
-      }
+      };
       this.map = new google.maps.Map(document.getElementById("map"),mapOptions);
       /*navigator.geolocation.getCurrentPosition(function(data){
         let latlagInfo = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);

@@ -2,23 +2,30 @@ import {Component} from "@angular/core";
 import {Platform, ionicBootstrap} from "ionic-angular";
 import {StatusBar} from "ionic-native";
 import {TabsPage} from "./pages/tabs/tabs";
-import {ConnectivityService} from "./providers/connectivity-service/connectivity-service";
-import {Facebookservice} from "./providers/facebookservice/facebookservice";
 import {LoginPage} from "./pages/login/login";
 import {AuthicationService} from "./providers/authication-service/authication-service";
-
+import {GallaryService} from "./providers/gallary-service/gallary-service";
+import {EnquiryService} from "./providers/enquiry-service/enquiry-service";
+import {FeedbackService} from "./providers/feedback-service/feedback-service";
+import {ConnectivityService} from "./providers/connectivity-service/connectivity-service";
+import {EventsPublisher} from "./providers/events-publisher/events-publisher";
+import {SendPhotoServices} from "./providers/send-photo-services/send-photo-services";
 
 @Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
-  providers: [Facebookservice]
+  providers: [GallaryService, AuthicationService, EnquiryService, FeedbackService, ConnectivityService, EventsPublisher, SendPhotoServices]
 })
 export class MyApp {
 
   public rootPage: any;
+
   db: any;
 
-  constructor(private platform: Platform, public fbService: Facebookservice) {
+
+  constructor(private platform: Platform, public connectivityService: ConnectivityService) {
+
     this.rootPage = TabsPage;
+    this.loadDataFromDB();
     this.checkPreviousAuthorization();
     console.log("printing the db connection" + this.db);
     platform.ready().then(() => {
@@ -36,9 +43,20 @@ export class MyApp {
       this.rootPage = TabsPage;
     }
   }
+
+  private loadDataFromDB() {
+
+
+    if (this.db == null || this.db == "undefined") {
+      this.db = ConnectivityService.getDatabaseConnection();
+    }
+    console.log("iniating the process of db sync and replication from remoter db server to phone");
+
+  }
 }
 
-ionicBootstrap(MyApp, [ConnectivityService,AuthicationService], {
+
+ionicBootstrap(MyApp, [AuthicationService, GallaryService, EnquiryService, FeedbackService, ConnectivityService, EventsPublisher, SendPhotoServices], {
   backButtonText: 'Go Back',
   iconMode: 'ios',
   modalEnter: 'modal-slide-in',

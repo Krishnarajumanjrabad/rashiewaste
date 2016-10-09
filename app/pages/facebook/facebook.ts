@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Component} from "@angular/core";
+import {NavController} from "ionic-angular";
 
 /*
   Generated class for the FacebookPage page.
@@ -11,6 +11,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'build/pages/facebook/facebook.html',
 })
 export class FacebookPage {
+
 
   constructor(private navCtrl: NavController) {
 
