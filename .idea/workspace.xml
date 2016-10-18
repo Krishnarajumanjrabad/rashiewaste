@@ -410,7 +410,7 @@
       <workItem from="1476191809784" duration="662000" />
       <workItem from="1476528824175" duration="22515000" />
       <workItem from="1476590802521" duration="57404000" />
-      <workItem from="1476766639126" duration="1537000" />
+      <workItem from="1476766639126" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user.">
       <created>1475639604101</created>
@@ -447,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476768545788</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user.">
+      <created>1476768617937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476768617937</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="406334000" />
+    <option name="totallyTimeSpent" value="407115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
