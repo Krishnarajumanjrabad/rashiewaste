@@ -26,33 +26,33 @@
 13 silly mapToRegistry uri https://registry.npmjs.org/bufferutil
 14 verbose request uri https://registry.npmjs.org/bufferutil
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 10:55:04 AM
-17 verbose request id fe7a2c85385626f1
+16 info attempt registry request try #1 at 11:36:35 AM
+17 verbose request id c7eb67c30ec68324
 18 verbose etag "6CKCZ3GK2OCOMG5EA98XR44G4"
 19 http request GET https://registry.npmjs.org/bufferutil
 20 http 304 https://registry.npmjs.org/bufferutil
-21 verbose headers { date: 'Tue, 18 Oct 2016 05:25:18 GMT',
+21 verbose headers { date: 'Tue, 18 Oct 2016 06:06:49 GMT',
 21 verbose headers   via: '1.1 varnish',
 21 verbose headers   'cache-control': 'max-age=300',
 21 verbose headers   etag: '"6CKCZ3GK2OCOMG5EA98XR44G4"',
-21 verbose headers   age: '123',
+21 verbose headers   age: '109',
 21 verbose headers   connection: 'keep-alive',
-21 verbose headers   'x-served-by': 'cache-cdg8725-CDG',
+21 verbose headers   'x-served-by': 'cache-cdg8729-CDG',
 21 verbose headers   'x-cache': 'HIT',
 21 verbose headers   'x-cache-hits': '1',
-21 verbose headers   'x-timer': 'S1476768318.986517,VS0,VE0',
+21 verbose headers   'x-timer': 'S1476770809.779746,VS0,VE0',
 21 verbose headers   vary: 'Accept-Encoding' }
 22 silly get cb [ 304,
-22 silly get   { date: 'Tue, 18 Oct 2016 05:25:18 GMT',
+22 silly get   { date: 'Tue, 18 Oct 2016 06:06:49 GMT',
 22 silly get     via: '1.1 varnish',
 22 silly get     'cache-control': 'max-age=300',
 22 silly get     etag: '"6CKCZ3GK2OCOMG5EA98XR44G4"',
-22 silly get     age: '123',
+22 silly get     age: '109',
 22 silly get     connection: 'keep-alive',
-22 silly get     'x-served-by': 'cache-cdg8725-CDG',
+22 silly get     'x-served-by': 'cache-cdg8729-CDG',
 22 silly get     'x-cache': 'HIT',
 22 silly get     'x-cache-hits': '1',
-22 silly get     'x-timer': 'S1476768318.986517,VS0,VE0',
+22 silly get     'x-timer': 'S1476770809.779746,VS0,VE0',
 22 silly get     vary: 'Accept-Encoding' } ]
 23 verbose etag https://registry.npmjs.org/bufferutil from cache
 24 verbose get saving bufferutil to C:\Users\krishnaraju\AppData\Roaming\npm-cache\registry.npmjs.org\bufferutil\.cache.json
@@ -132,215 +132,215 @@
 70 silly mapToRegistry uri https://registry.npmjs.org/nan
 71 verbose request uri https://registry.npmjs.org/bindings
 72 verbose request no auth needed
-73 info attempt registry request try #1 at 10:55:08 AM
+73 info attempt registry request try #1 at 11:36:39 AM
 74 verbose etag "C1AW6UVQGY4VZQGFC1WTIGMDV"
 75 http request GET https://registry.npmjs.org/bindings
 76 verbose request uri https://registry.npmjs.org/nan
 77 verbose request no auth needed
-78 info attempt registry request try #1 at 10:55:08 AM
+78 info attempt registry request try #1 at 11:36:39 AM
 79 verbose etag "1YJEPM5V4XH0MZT0HV3B8R9BB"
 80 http request GET https://registry.npmjs.org/nan
 81 http 304 https://registry.npmjs.org/bindings
-82 verbose headers { date: 'Tue, 18 Oct 2016 05:25:19 GMT',
+82 verbose headers { date: 'Tue, 18 Oct 2016 06:06:50 GMT',
 82 verbose headers   via: '1.1 varnish',
 82 verbose headers   'cache-control': 'max-age=300',
 82 verbose headers   etag: '"C1AW6UVQGY4VZQGFC1WTIGMDV"',
-82 verbose headers   age: '241',
+82 verbose headers   age: '0',
 82 verbose headers   connection: 'keep-alive',
-82 verbose headers   'x-served-by': 'cache-cdg8725-CDG',
+82 verbose headers   'x-served-by': 'cache-cdg8729-CDG',
 82 verbose headers   'x-cache': 'HIT',
 82 verbose headers   'x-cache-hits': '1',
-82 verbose headers   'x-timer': 'S1476768319.566609,VS0,VE0',
+82 verbose headers   'x-timer': 'S1476770810.849664,VS0,VE376',
 82 verbose headers   vary: 'Accept-Encoding' }
 83 silly get cb [ 304,
-83 silly get   { date: 'Tue, 18 Oct 2016 05:25:19 GMT',
+83 silly get   { date: 'Tue, 18 Oct 2016 06:06:50 GMT',
 83 silly get     via: '1.1 varnish',
 83 silly get     'cache-control': 'max-age=300',
 83 silly get     etag: '"C1AW6UVQGY4VZQGFC1WTIGMDV"',
-83 silly get     age: '241',
+83 silly get     age: '0',
 83 silly get     connection: 'keep-alive',
-83 silly get     'x-served-by': 'cache-cdg8725-CDG',
+83 silly get     'x-served-by': 'cache-cdg8729-CDG',
 83 silly get     'x-cache': 'HIT',
 83 silly get     'x-cache-hits': '1',
-83 silly get     'x-timer': 'S1476768319.566609,VS0,VE0',
+83 silly get     'x-timer': 'S1476770810.849664,VS0,VE376',
 83 silly get     vary: 'Accept-Encoding' } ]
 84 verbose etag https://registry.npmjs.org/bindings from cache
 85 verbose get saving bindings to C:\Users\krishnaraju\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
 86 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-87 silly resolveWithNewModule bindings@1.2.1 checking installable status
-88 silly cache add args [ 'bindings@1.2.x', null ]
-89 verbose cache add spec bindings@1.2.x
-90 silly cache add parsed spec Result {
-90 silly cache add   raw: 'bindings@1.2.x',
-90 silly cache add   scope: null,
-90 silly cache add   escapedName: 'bindings',
-90 silly cache add   name: 'bindings',
-90 silly cache add   rawSpec: '1.2.x',
-90 silly cache add   spec: '>=1.2.0 <1.3.0',
-90 silly cache add   type: 'range' }
-91 silly addNamed bindings@>=1.2.0 <1.3.0
-92 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for bindings
-93 silly addNameRange { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: false }
-94 silly mapToRegistry name bindings
-95 silly mapToRegistry using default registry
-96 silly mapToRegistry registry https://registry.npmjs.org/
-97 silly mapToRegistry data Result {
-97 silly mapToRegistry   raw: 'bindings',
-97 silly mapToRegistry   scope: null,
-97 silly mapToRegistry   escapedName: 'bindings',
-97 silly mapToRegistry   name: 'bindings',
-97 silly mapToRegistry   rawSpec: '',
-97 silly mapToRegistry   spec: 'latest',
-97 silly mapToRegistry   type: 'tag' }
-98 silly mapToRegistry uri https://registry.npmjs.org/bindings
-99 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
-100 verbose get https://registry.npmjs.org/bindings not expired, no request
-101 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: true }
-102 silly addNameRange versions [ 'bindings',
-102 silly addNameRange   [ '0.0.1',
-102 silly addNameRange     '0.1.0',
-102 silly addNameRange     '0.1.1',
-102 silly addNameRange     '0.2.0',
-102 silly addNameRange     '0.2.1',
-102 silly addNameRange     '0.2.2',
-102 silly addNameRange     '0.2.3',
-102 silly addNameRange     '0.2.4',
-102 silly addNameRange     '0.3.0',
-102 silly addNameRange     '0.4.0',
-102 silly addNameRange     '1.0.0',
-102 silly addNameRange     '1.1.0',
-102 silly addNameRange     '1.1.1',
-102 silly addNameRange     '1.2.0',
-102 silly addNameRange     '1.2.1' ] ]
-103 silly addNamed bindings@1.2.1
-104 verbose addNamed "1.2.1" is a plain semver version for bindings
-105 silly cache afterAdd bindings@1.2.1
-106 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
-107 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-108 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
-109 http 304 https://registry.npmjs.org/nan
-110 verbose headers { date: 'Tue, 18 Oct 2016 05:25:20 GMT',
-110 verbose headers   via: '1.1 varnish',
-110 verbose headers   'cache-control': 'max-age=300',
-110 verbose headers   etag: '"1YJEPM5V4XH0MZT0HV3B8R9BB"',
-110 verbose headers   age: '125',
-110 verbose headers   connection: 'keep-alive',
-110 verbose headers   'x-served-by': 'cache-cdg8726-CDG',
-110 verbose headers   'x-cache': 'HIT',
-110 verbose headers   'x-cache-hits': '1',
-110 verbose headers   'x-timer': 'S1476768320.948125,VS0,VE0',
-110 verbose headers   vary: 'Accept-Encoding' }
-111 silly get cb [ 304,
-111 silly get   { date: 'Tue, 18 Oct 2016 05:25:20 GMT',
-111 silly get     via: '1.1 varnish',
-111 silly get     'cache-control': 'max-age=300',
-111 silly get     etag: '"1YJEPM5V4XH0MZT0HV3B8R9BB"',
-111 silly get     age: '125',
-111 silly get     connection: 'keep-alive',
-111 silly get     'x-served-by': 'cache-cdg8726-CDG',
-111 silly get     'x-cache': 'HIT',
-111 silly get     'x-cache-hits': '1',
-111 silly get     'x-timer': 'S1476768320.948125,VS0,VE0',
-111 silly get     vary: 'Accept-Encoding' } ]
-112 verbose etag https://registry.npmjs.org/nan from cache
-113 verbose get saving nan to C:\Users\krishnaraju\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
-114 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-115 silly resolveWithNewModule nan@2.4.0 checking installable status
-116 silly cache add args [ 'nan@^2.0.5', null ]
-117 verbose cache add spec nan@^2.0.5
-118 silly cache add parsed spec Result {
-118 silly cache add   raw: 'nan@^2.0.5',
-118 silly cache add   scope: null,
-118 silly cache add   escapedName: 'nan',
-118 silly cache add   name: 'nan',
-118 silly cache add   rawSpec: '^2.0.5',
-118 silly cache add   spec: '>=2.0.5 <3.0.0',
-118 silly cache add   type: 'range' }
-119 silly addNamed nan@>=2.0.5 <3.0.0
-120 verbose addNamed ">=2.0.5 <3.0.0" is a valid semver range for nan
-121 silly addNameRange { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: false }
-122 silly mapToRegistry name nan
-123 silly mapToRegistry using default registry
-124 silly mapToRegistry registry https://registry.npmjs.org/
-125 silly mapToRegistry data Result {
-125 silly mapToRegistry   raw: 'nan',
-125 silly mapToRegistry   scope: null,
-125 silly mapToRegistry   escapedName: 'nan',
-125 silly mapToRegistry   name: 'nan',
-125 silly mapToRegistry   rawSpec: '',
-125 silly mapToRegistry   spec: 'latest',
-125 silly mapToRegistry   type: 'tag' }
-126 silly mapToRegistry uri https://registry.npmjs.org/nan
-127 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
-128 verbose get https://registry.npmjs.org/nan not expired, no request
-129 silly addNameRange number 2 { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: true }
-130 silly addNameRange versions [ 'nan',
-130 silly addNameRange   [ '0.3.0-wip',
-130 silly addNameRange     '0.3.0-wip2',
-130 silly addNameRange     '0.3.0',
-130 silly addNameRange     '0.3.1',
-130 silly addNameRange     '0.3.2',
-130 silly addNameRange     '0.4.0',
-130 silly addNameRange     '0.4.1',
-130 silly addNameRange     '0.4.2',
-130 silly addNameRange     '0.4.3',
-130 silly addNameRange     '0.4.4',
-130 silly addNameRange     '0.5.0',
-130 silly addNameRange     '0.5.1',
-130 silly addNameRange     '0.5.2',
-130 silly addNameRange     '0.6.0',
-130 silly addNameRange     '0.7.0',
-130 silly addNameRange     '0.7.1',
-130 silly addNameRange     '0.8.0',
-130 silly addNameRange     '1.0.0',
-130 silly addNameRange     '1.1.0',
-130 silly addNameRange     '1.1.1',
-130 silly addNameRange     '1.1.2',
-130 silly addNameRange     '1.2.0',
-130 silly addNameRange     '1.3.0',
-130 silly addNameRange     '1.4.0',
-130 silly addNameRange     '1.4.1',
-130 silly addNameRange     '1.5.0',
-130 silly addNameRange     '1.4.2',
-130 silly addNameRange     '1.4.3',
-130 silly addNameRange     '1.5.1',
-130 silly addNameRange     '1.5.2',
-130 silly addNameRange     '1.6.0',
-130 silly addNameRange     '1.5.3',
-130 silly addNameRange     '1.6.1',
-130 silly addNameRange     '1.6.2',
-130 silly addNameRange     '1.7.0',
-130 silly addNameRange     '1.8.0',
-130 silly addNameRange     '1.8.1',
-130 silly addNameRange     '1.8.2',
-130 silly addNameRange     '1.8.3',
-130 silly addNameRange     '1.8.4',
-130 silly addNameRange     '1.9.0',
-130 silly addNameRange     '2.0.0',
-130 silly addNameRange     '2.0.1',
-130 silly addNameRange     '2.0.2',
-130 silly addNameRange     '2.0.3',
-130 silly addNameRange     '2.0.4',
-130 silly addNameRange     '2.0.5',
-130 silly addNameRange     '2.0.6',
-130 silly addNameRange     '2.0.7',
-130 silly addNameRange     '2.0.8',
-130 silly addNameRange     '2.0.9',
-130 silly addNameRange     '2.1.0',
-130 silly addNameRange     '2.2.0',
-130 silly addNameRange     '2.2.1',
-130 silly addNameRange     '2.3.0',
-130 silly addNameRange     '2.3.1',
-130 silly addNameRange     '2.3.2',
-130 silly addNameRange     '2.3.3',
-130 silly addNameRange     '2.3.4',
-130 silly addNameRange     '2.3.5',
-130 silly addNameRange     '2.4.0' ] ]
-131 silly addNamed nan@2.4.0
-132 verbose addNamed "2.4.0" is a plain semver version for nan
-133 silly cache afterAdd nan@2.4.0
-134 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json not in flight; writing
-135 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+87 http 304 https://registry.npmjs.org/nan
+88 verbose headers { date: 'Tue, 18 Oct 2016 06:06:51 GMT',
+88 verbose headers   via: '1.1 varnish',
+88 verbose headers   'cache-control': 'max-age=300',
+88 verbose headers   etag: '"1YJEPM5V4XH0MZT0HV3B8R9BB"',
+88 verbose headers   age: '217',
+88 verbose headers   connection: 'keep-alive',
+88 verbose headers   'x-served-by': 'cache-cdg8725-CDG',
+88 verbose headers   'x-cache': 'HIT',
+88 verbose headers   'x-cache-hits': '2',
+88 verbose headers   'x-timer': 'S1476770811.258268,VS0,VE0',
+88 verbose headers   vary: 'Accept-Encoding' }
+89 silly get cb [ 304,
+89 silly get   { date: 'Tue, 18 Oct 2016 06:06:51 GMT',
+89 silly get     via: '1.1 varnish',
+89 silly get     'cache-control': 'max-age=300',
+89 silly get     etag: '"1YJEPM5V4XH0MZT0HV3B8R9BB"',
+89 silly get     age: '217',
+89 silly get     connection: 'keep-alive',
+89 silly get     'x-served-by': 'cache-cdg8725-CDG',
+89 silly get     'x-cache': 'HIT',
+89 silly get     'x-cache-hits': '2',
+89 silly get     'x-timer': 'S1476770811.258268,VS0,VE0',
+89 silly get     vary: 'Accept-Encoding' } ]
+90 verbose etag https://registry.npmjs.org/nan from cache
+91 verbose get saving nan to C:\Users\krishnaraju\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+92 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+93 silly resolveWithNewModule bindings@1.2.1 checking installable status
+94 silly cache add args [ 'bindings@1.2.x', null ]
+95 verbose cache add spec bindings@1.2.x
+96 silly cache add parsed spec Result {
+96 silly cache add   raw: 'bindings@1.2.x',
+96 silly cache add   scope: null,
+96 silly cache add   escapedName: 'bindings',
+96 silly cache add   name: 'bindings',
+96 silly cache add   rawSpec: '1.2.x',
+96 silly cache add   spec: '>=1.2.0 <1.3.0',
+96 silly cache add   type: 'range' }
+97 silly addNamed bindings@>=1.2.0 <1.3.0
+98 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for bindings
+99 silly addNameRange { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: false }
+100 silly mapToRegistry name bindings
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry data Result {
+103 silly mapToRegistry   raw: 'bindings',
+103 silly mapToRegistry   scope: null,
+103 silly mapToRegistry   escapedName: 'bindings',
+103 silly mapToRegistry   name: 'bindings',
+103 silly mapToRegistry   rawSpec: '',
+103 silly mapToRegistry   spec: 'latest',
+103 silly mapToRegistry   type: 'tag' }
+104 silly mapToRegistry uri https://registry.npmjs.org/bindings
+105 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+106 silly resolveWithNewModule nan@2.4.0 checking installable status
+107 silly cache add args [ 'nan@^2.0.5', null ]
+108 verbose cache add spec nan@^2.0.5
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'nan@^2.0.5',
+109 silly cache add   scope: null,
+109 silly cache add   escapedName: 'nan',
+109 silly cache add   name: 'nan',
+109 silly cache add   rawSpec: '^2.0.5',
+109 silly cache add   spec: '>=2.0.5 <3.0.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed nan@>=2.0.5 <3.0.0
+111 verbose addNamed ">=2.0.5 <3.0.0" is a valid semver range for nan
+112 silly addNameRange { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: false }
+113 silly mapToRegistry name nan
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry data Result {
+116 silly mapToRegistry   raw: 'nan',
+116 silly mapToRegistry   scope: null,
+116 silly mapToRegistry   escapedName: 'nan',
+116 silly mapToRegistry   name: 'nan',
+116 silly mapToRegistry   rawSpec: '',
+116 silly mapToRegistry   spec: 'latest',
+116 silly mapToRegistry   type: 'tag' }
+117 silly mapToRegistry uri https://registry.npmjs.org/nan
+118 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+119 verbose get https://registry.npmjs.org/bindings not expired, no request
+120 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: true }
+121 silly addNameRange versions [ 'bindings',
+121 silly addNameRange   [ '0.0.1',
+121 silly addNameRange     '0.1.0',
+121 silly addNameRange     '0.1.1',
+121 silly addNameRange     '0.2.0',
+121 silly addNameRange     '0.2.1',
+121 silly addNameRange     '0.2.2',
+121 silly addNameRange     '0.2.3',
+121 silly addNameRange     '0.2.4',
+121 silly addNameRange     '0.3.0',
+121 silly addNameRange     '0.4.0',
+121 silly addNameRange     '1.0.0',
+121 silly addNameRange     '1.1.0',
+121 silly addNameRange     '1.1.1',
+121 silly addNameRange     '1.2.0',
+121 silly addNameRange     '1.2.1' ] ]
+122 silly addNamed bindings@1.2.1
+123 verbose addNamed "1.2.1" is a plain semver version for bindings
+124 verbose get https://registry.npmjs.org/nan not expired, no request
+125 silly addNameRange number 2 { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: true }
+126 silly addNameRange versions [ 'nan',
+126 silly addNameRange   [ '0.3.0-wip',
+126 silly addNameRange     '0.3.0-wip2',
+126 silly addNameRange     '0.3.0',
+126 silly addNameRange     '0.3.1',
+126 silly addNameRange     '0.3.2',
+126 silly addNameRange     '0.4.0',
+126 silly addNameRange     '0.4.1',
+126 silly addNameRange     '0.4.2',
+126 silly addNameRange     '0.4.3',
+126 silly addNameRange     '0.4.4',
+126 silly addNameRange     '0.5.0',
+126 silly addNameRange     '0.5.1',
+126 silly addNameRange     '0.5.2',
+126 silly addNameRange     '0.6.0',
+126 silly addNameRange     '0.7.0',
+126 silly addNameRange     '0.7.1',
+126 silly addNameRange     '0.8.0',
+126 silly addNameRange     '1.0.0',
+126 silly addNameRange     '1.1.0',
+126 silly addNameRange     '1.1.1',
+126 silly addNameRange     '1.1.2',
+126 silly addNameRange     '1.2.0',
+126 silly addNameRange     '1.3.0',
+126 silly addNameRange     '1.4.0',
+126 silly addNameRange     '1.4.1',
+126 silly addNameRange     '1.5.0',
+126 silly addNameRange     '1.4.2',
+126 silly addNameRange     '1.4.3',
+126 silly addNameRange     '1.5.1',
+126 silly addNameRange     '1.5.2',
+126 silly addNameRange     '1.6.0',
+126 silly addNameRange     '1.5.3',
+126 silly addNameRange     '1.6.1',
+126 silly addNameRange     '1.6.2',
+126 silly addNameRange     '1.7.0',
+126 silly addNameRange     '1.8.0',
+126 silly addNameRange     '1.8.1',
+126 silly addNameRange     '1.8.2',
+126 silly addNameRange     '1.8.3',
+126 silly addNameRange     '1.8.4',
+126 silly addNameRange     '1.9.0',
+126 silly addNameRange     '2.0.0',
+126 silly addNameRange     '2.0.1',
+126 silly addNameRange     '2.0.2',
+126 silly addNameRange     '2.0.3',
+126 silly addNameRange     '2.0.4',
+126 silly addNameRange     '2.0.5',
+126 silly addNameRange     '2.0.6',
+126 silly addNameRange     '2.0.7',
+126 silly addNameRange     '2.0.8',
+126 silly addNameRange     '2.0.9',
+126 silly addNameRange     '2.1.0',
+126 silly addNameRange     '2.2.0',
+126 silly addNameRange     '2.2.1',
+126 silly addNameRange     '2.3.0',
+126 silly addNameRange     '2.3.1',
+126 silly addNameRange     '2.3.2',
+126 silly addNameRange     '2.3.3',
+126 silly addNameRange     '2.3.4',
+126 silly addNameRange     '2.3.5',
+126 silly addNameRange     '2.4.0' ] ]
+127 silly addNamed nan@2.4.0
+128 verbose addNamed "2.4.0" is a plain semver version for nan
+129 silly cache afterAdd bindings@1.2.1
+130 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+131 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+132 silly cache afterAdd nan@2.4.0
+133 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json not in flight; writing
+134 verbose correctMkdir C:\Users\krishnaraju\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+135 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
 136 verbose afterAdd C:\Users\krishnaraju\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json written
 137 silly loadAllDepsIntoIdealTree Finishing
 138 silly loadIdealTree Finishing
@@ -397,53 +397,53 @@
 186 verbose unbuild node_modules\.staging\bufferutil-ac0dd1b5
 187 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f is being purged from base C:\Users\krishnaraju\AppData\Roaming\npm
 188 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f
-189 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5 is being purged from base C:\Users\krishnaraju\AppData\Roaming\npm
-190 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5
-191 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316 is being purged from base C:\Users\krishnaraju\AppData\Roaming\npm
-192 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316
+189 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316 is being purged from base C:\Users\krishnaraju\AppData\Roaming\npm
+190 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316
+191 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5 is being purged from base C:\Users\krishnaraju\AppData\Roaming\npm
+192 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5
 193 verbose tar unpack C:\Users\krishnaraju\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
 194 verbose tar unpacking to C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f
 195 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f is being purged
 196 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f
-197 verbose tar unpack C:\Users\krishnaraju\AppData\Roaming\npm-cache\bufferutil\1.2.1\package.tgz
-198 verbose tar unpacking to C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5
-199 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5 is being purged
-200 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5
-201 verbose tar unpack C:\Users\krishnaraju\AppData\Roaming\npm-cache\nan\2.4.0\package.tgz
-202 verbose tar unpacking to C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316
-203 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316 is being purged
-204 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316
+197 verbose tar unpack C:\Users\krishnaraju\AppData\Roaming\npm-cache\nan\2.4.0\package.tgz
+198 verbose tar unpacking to C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316
+199 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316 is being purged
+200 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\nan-3ee57316
+201 verbose tar unpack C:\Users\krishnaraju\AppData\Roaming\npm-cache\bufferutil\1.2.1\package.tgz
+202 verbose tar unpacking to C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5
+203 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5 is being purged
+204 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bufferutil-ac0dd1b5
 205 silly gunzTarPerm modes [ '777', '666' ]
 206 silly gunzTarPerm modes [ '777', '666' ]
 207 silly gunzTarPerm modes [ '777', '666' ]
 208 silly gunzTarPerm extractEntry package.json
 209 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
 210 silly gunzTarPerm extractEntry package.json
-211 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+211 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
 212 silly gunzTarPerm extractEntry package.json
-213 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+213 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
 214 silly gunzTarPerm extractEntry README.md
-215 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-216 silly gunzTarPerm extractEntry bindings.js
-217 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
-218 silly gunzTarPerm extractEntry .npmignore
-219 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-220 silly gunzTarPerm extractEntry README.md
-221 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-222 silly gunzTarPerm extractEntry README.md
-223 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
-224 silly gunzTarPerm extractEntry include_dirs.js
-225 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
-226 silly gunzTarPerm extractEntry fallback.js
-227 silly gunzTarPerm modified mode [ 'fallback.js', 420, 438 ]
-228 silly gunzTarPerm extractEntry index.js
-229 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-230 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
-231 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
-232 silly gunzTarPerm extractEntry CHANGELOG.md
-233 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
-234 silly gunzTarPerm extractEntry LICENSE.md
-235 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+215 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+216 silly gunzTarPerm extractEntry README.md
+217 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+218 silly gunzTarPerm extractEntry bindings.js
+219 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+220 silly gunzTarPerm extractEntry include_dirs.js
+221 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+222 silly gunzTarPerm extractEntry .npmignore
+223 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+224 silly gunzTarPerm extractEntry README.md
+225 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+226 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+227 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+228 silly gunzTarPerm extractEntry CHANGELOG.md
+229 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+230 silly gunzTarPerm extractEntry LICENSE.md
+231 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+232 silly gunzTarPerm extractEntry fallback.js
+233 silly gunzTarPerm modified mode [ 'fallback.js', 420, 438 ]
+234 silly gunzTarPerm extractEntry index.js
+235 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
 236 silly gunzTarPerm extractEntry doc/node_misc.md
 237 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
 238 silly gunzTarPerm extractEntry .travis.yml
@@ -460,12 +460,12 @@
 249 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
 250 silly gunzTarPerm extractEntry doc/errors.md
 251 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
-252 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f\node_modules is being purged
-253 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f\node_modules
-254 silly gunzTarPerm extractEntry doc/maybe_types.md
-255 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
-256 silly gunzTarPerm extractEntry doc/methods.md
-257 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+252 silly gunzTarPerm extractEntry doc/maybe_types.md
+253 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+254 silly gunzTarPerm extractEntry doc/methods.md
+255 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+256 silly gentlyRm C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f\node_modules is being purged
+257 verbose gentlyRm don't care about contents; nuking C:\Users\krishnaraju\AppData\Roaming\npm\node_modules\.staging\bindings-7927c45f\node_modules
 258 silly gunzTarPerm extractEntry doc/new.md
 259 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
 260 silly gunzTarPerm extractEntry doc/buffers.md

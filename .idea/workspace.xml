@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a1b3b8e-424f-4c41-aa88-9110875ee806" name="Default" comment="">
+    <list default="true" id="2a1b3b8e-424f-4c41-aa88-9110875ee806" name="Default" comment="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
+    </list>
+    <list id="5c40bee2-dc66-47c4-b2b2-c1a62dcd5559" name="New changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rashiewaste.iws" />
@@ -10,6 +13,7 @@
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,6 +400,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2a1b3b8e-424f-4c41-aa88-9110875ee806" name="Default" comment="" />
+      <changelist id="5c40bee2-dc66-47c4-b2b2-c1a62dcd5559" name="New changelist" comment="" />
       <created>1475053962037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -410,7 +415,7 @@
       <workItem from="1476191809784" duration="662000" />
       <workItem from="1476528824175" duration="22515000" />
       <workItem from="1476590802521" duration="57404000" />
-      <workItem from="1476766639126" duration="2318000" />
+      <workItem from="1476766639126" duration="3303000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user.">
       <created>1475639604101</created>
@@ -454,14 +459,28 @@
       <option name="project" value="LOCAL" />
       <updated>1476768617937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user.">
+      <created>1476769571337</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1476769571337</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user.">
+      <created>1476769832970</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1476769832970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="407115000" />
+    <option name="totallyTimeSpent" value="408100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -497,6 +516,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user." />
     <option name="LAST_COMMIT_MESSAGE" value="Implemented log validation&#10;&#10;TODO sending the email to acceptance from the user." />
+    <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -719,8 +739,8 @@
         <state relative-caret-position="473">
           <caret line="93" column="70" selection-start-line="93" selection-start-column="70" selection-end-line="93" selection-end-column="70" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#button#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#ion-list-header#0;n#ion-list#0;n#div#0;n#ion-card#1;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#button#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#ion-content#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#ion-list-header#0;n#ion-list#0;n#div#0;n#ion-card#1;n#ion-content#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
