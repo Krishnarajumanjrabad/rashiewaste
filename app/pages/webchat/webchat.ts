@@ -1,7 +1,7 @@
 import {Component, NgZone} from "@angular/core";
 import {Http} from "@angular/http";
-/*declare var require: Require;
- var io = require('socket.io');*/
+declare var require: Require;
+ var io = require('socket.io');
 
 /*
  Generated class for the WebchatPage page.
@@ -13,15 +13,15 @@ import {Http} from "@angular/http";
   templateUrl: 'build/pages/webchat/webchat.html',
 })
 export class WebchatPage {
-  /*private socketHost;
+  private socketHost;
    private messages;
    private zone;
    private chatBox;
-   private socket;*/
+   private socket;
 
 
   constructor(http: Http, zone: NgZone) {
-    /* this.messages = [];
+     this.messages = [];
      this.socketHost = "http://192.168.1.105:3000";
      this.zone = new NgZone({enableLongStackTrace: false});
      http.get(this.socketHost + "/fetch").subscribe((success) => {
@@ -38,14 +38,14 @@ export class WebchatPage {
      this.zone.run(() => {
      this.messages.push(msg);
      });
-     });*/
+     });
   }
 
-  /*send(message) {
+  send(message) {
    if(message && message != "") {
    this.socket.emit("chat_message", message);
    }
    this.chatBox = "";
-   }*/
+   }
 
 }

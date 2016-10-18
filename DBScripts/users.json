@@ -1,0 +1,25 @@
+{
+   "_id": "users",
+   "_rev": "5-681c7eae6a95180330b0dfbba5049c27",
+   "users": [
+       {
+           "password": "Shaila12",
+           "confirmPassword": "Shaila12",
+           "companyName": "Rashi E Waste",
+           "name": "Shaila Gurudut",
+           "address": "Mellashwaram",
+           "contactNumber": "68669696969",
+           "email": "shaila@gmail.com",
+           "role": "admin"
+       },
+       {
+           "password": "Ganesh12",
+           "confirmPassword": "Ganesh12",
+           "companyName": "Krishna & Co",
+           "name": "Krishnaraju",
+           "address": "Nagawara",
+           "contactNumber": "77979997979",
+           "email": "krishnaraju@gmail.com"
+       }
+   ]
+}
